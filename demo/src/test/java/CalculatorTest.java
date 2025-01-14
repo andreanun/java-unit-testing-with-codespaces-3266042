@@ -1,4 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
@@ -48,8 +50,21 @@ public class CalculatorTest {
     int actual = calculator.divide(12, 0);
 
     assertEquals(expected, actual);
+  
+  }
 
-    
+  @Test
+  public void testIsEven() {
+    boolean actual = calculator.isEven(2);
+
+    assertTrue(actual);
+  }
+
+  @Test
+  public void testIsOdd() {
+    boolean actual = calculator.isEven(3);
+
+    assertFalse(actual);
   }
 
 

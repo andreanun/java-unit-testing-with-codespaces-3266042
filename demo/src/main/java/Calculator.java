@@ -16,4 +16,14 @@ public class Calculator {
     if (y == 0 ) { return -1;}
     return x / y;
   }
+
+  public boolean isEven(int z) {
+    return z % 2 == 0;
+  }
+
+  // public boolean isOdd(int z) {
+  //   return z % 2 == 1;
+  // }
+
+
 }
